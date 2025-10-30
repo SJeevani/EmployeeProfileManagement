@@ -19,4 +19,7 @@ public class EmployeeProfile {
     private String mobile;
     private String email;
     private URL linkedInUrl;
+
+//    I would like to add a few more fields in future
+
 }
