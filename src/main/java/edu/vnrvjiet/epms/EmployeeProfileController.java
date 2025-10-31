@@ -26,7 +26,7 @@ public class EmployeeProfileController {
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
-    @GetMapping("findById")
+    @GetMapping("findById/{employeeProfileId}")
     public ResponseEntity<EmployeeProfile> findEmployeeProfileById(@PathVariable Integer employeeProfileId){
         var employeeProfile = employeeProfileService.findById(employeeProfileId);
         return new ResponseEntity<>(employeeProfile.orElse(null),HttpStatus.OK);
